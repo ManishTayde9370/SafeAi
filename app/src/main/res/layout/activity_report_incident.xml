@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"> <!-- Light background color for the form -->
+
+    <!-- Heading for the Form -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Report an Incident"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Title Input Field -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+
+        android:padding="16dp"
+        android:textColor="#333333"
+        android:textColorHint="#A9A9A9"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Description Input Field -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:minLines="3"
+        android:maxLines="5"
+        android:gravity="top|start"
+
+        android:padding="16dp"
+        android:textColor="#333333"
+        android:textColorHint="#A9A9A9"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Severity Spinner -->
+    <Spinner
+        android:id="@+id/spinnerSeverity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_background"
+        android:padding="16dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:text="Report Incident"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:padding="16dp"
+    android:textSize="16sp"/>
+</LinearLayout>
